@@ -40,4 +40,45 @@
   header .navigation.active {
     right: 0;
   }
+  .card {
+    border-radius: 24px;
+    background: #fdf7f5;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    overflow: hidden;
+    height: 330px;
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1024px) {
+    .card {
+      max-width: 276px;
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    .card {
+      max-width: 288px;
+    }
+  }
+  .card .content {
+    position: absolute;
+    top: 140px;
+    background: #fdf7f5;
+    border-top-right-radius: 24px;
+    width: 100%;
+  }
+  .content::before {
+    content: "";
+    position: absolute;
+    top: calc(0px - 25px);
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(
+      circle at 100% 0%,
+      transparent 25px,
+      #fdf7f5 25px
+    );
+  }
 }
