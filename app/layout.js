@@ -1,6 +1,7 @@
 import { Signika } from "next/font/google";
 import "./global.css";
 import { Header } from "../components/layout/header.js";
+import { Footer } from "../components/layout/footer/footer.jsx";
 
 const signika = Signika({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className={signika.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
