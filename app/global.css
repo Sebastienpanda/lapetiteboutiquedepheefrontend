@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper {
+  position: initial !important;
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  bottom: -60px;
+}
+.swiper-pagination-bullet-active {
+  background: rgba(89, 114, 83) !important;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: -50px !important;
+  color: #6e35b3 !important;
+  top: 67% !important;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -50px !important;
+  color: #6e35b3 !important;
+  top: 67% !important;
+}
+.slide {
+  border: 2px solid #597253;
+  background: #fdf7f5;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 8px;
+}
+.plus {
+  position: relative;
+  cursor: pointer;
+}
+.plus::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 53px;
+  height: 2px;
+  border-radius: 2px;
+  border-bottom: 2px solid #9824b9;
+}
+
 @layer utilities {
   body.no-scroll {
     overflow: hidden;
