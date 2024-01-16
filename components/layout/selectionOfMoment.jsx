@@ -2,18 +2,15 @@ import Image from "next/image.js";
 import { selectionOfMoment } from "../../selectionOfMoment.js";
 import { Button } from "@/components/ui/button.jsx";
 import { ShoppingCart } from "lucide-react";
+import { Title } from "./title/title.jsx";
 
 export function SelectionOfMoment() {
   return (
     <section className="mt-16 md:mt-28">
-      <div className="text-center flex flex-col gap-4">
-        <h2 className="text-3xl text-heading md:text-4xl lg:text-5xl">
-          La sélection du moment
-        </h2>
-        <span className="text-sm font-normal text-primary-500 md:text-base">
-          Découvrez nos sélections du moment
-        </span>
-      </div>
+      <Title
+        title="La sélection du moment"
+        subtitle="Découvrez nos sélections du moment"
+      />
       <div className="flex gap-8 items-center justify-center flex-wrap mt-8 md:mt-16">
         {selectionOfMoment.map((selection, index) => {
           return (
