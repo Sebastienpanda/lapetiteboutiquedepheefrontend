@@ -38,6 +38,9 @@ module.exports = {
           500: "hsla(108, 16%, 39%, 1)",
           250: "hsla(108, 16%, 39%, .1)",
         },
+        secondary: {
+          500: "hsla(267, 54%, 45%, 1)",
+        },
         background: "hsla(15, 67%, 98%, 1)",
         btn: "hsla(15, 67%, 98%, 1)",
         body: "hsla(251, 8%, 27%, 1)",
@@ -59,28 +62,28 @@ module.exports = {
             fontWeight: 700,
           },
         ],
-        "text-base": [
+        base: [
           "1rem",
           {
             lineHeight: "1.5rem",
-            fontWeight: 700,
+            fontWeight: 400,
           },
         ],
-        "text-lg": [
+        lg: [
           "1.125rem",
           {
             lineHeight: "1.75rem",
             fontWeight: 700,
           },
         ],
-        "text-xl": [
+        xl: [
           "1.25rem",
           {
             lineHeight: "1.75rem",
             fontWeight: 700,
           },
         ],
-        "text-2xl": [
+        "2xl": [
           "1.5rem",
           {
             lineHeight: "2rem",
@@ -94,17 +97,16 @@ module.exports = {
             fontWeight: 700,
           },
         ],
-        "text-4xl": [
+        "4xl": [
           "2.25rem",
           {
             lineHeight: "2.5rem",
             fontWeight: 700,
           },
         ],
-        "text-5xl": [
+        "5xl": [
           "3rem",
           {
-            lineHeight: "0.0625rem",
             fontWeight: 700,
           },
         ],
@@ -115,7 +117,7 @@ module.exports = {
             fontWeight: 700,
           },
         ],
-        "text-7xl": [
+        "7xl": [
           "4.5rem",
           {
             lineHeight: "0.0625rem",
