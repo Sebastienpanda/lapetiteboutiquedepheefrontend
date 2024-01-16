@@ -65,7 +65,11 @@ export function Mobile() {
                     }`}
         ></span>
       </div>
-      <div id="background" className="background"></div>
+      <div
+        onClick={handleClick}
+        id="background"
+        className="background cursor-pointer"
+      ></div>
       <nav
         id="nav"
         className={`flex-col gap-8 flex pb-32 navigation ${
