@@ -59,7 +59,7 @@ module.exports = {
           "0.875rem",
           {
             lineHeight: "1.25rem",
-            fontWeight: 700,
+            fontWeight: 400,
           },
         ],
         base: [
