@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  body.no-scroll {
+    overflow: hidden;
+  }
+  .background {
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    background: #000;
+    height: 100vh;
+    z-index: 1;
+    width: 100%;
+    transition: right 350ms ease-in-out, background 350ms ease-in-out,
+      opacity 350ms ease-in-out;
+  }
+  .background.active {
+    opacity: 0.5;
+    right: 0;
+  }
+  @media screen and (min-width: 1024px) {
+    .background {
+      display: none;
+    }
+  }
+  header .navigation {
+    position: fixed;
+    right: -1000px;
+    top: 0;
+    z-index: 1;
+    transition: right 350ms ease-in-out, background 350ms ease-in-out;
+    height: 100vh;
+    overflow-y: scroll;
+    background: #fdf7f5;
+    box-shadow: 0px 8px 24px 0px rgba(149, 157, 155, 0.2);
+  }
+  header .navigation.active {
+    right: 0;
+  }
+}
