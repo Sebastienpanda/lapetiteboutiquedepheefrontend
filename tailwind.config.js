@@ -11,9 +11,11 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
+      padding: {
+        DEFAULT: "1rem",
+        lg: "2rem",
+        xl: "5rem",
+        "2xl": "0",
       },
     },
     extend: {
@@ -37,6 +39,100 @@ module.exports = {
           250: "hsla(108, 16%, 39%, .1)",
         },
         background: "hsla(15, 67%, 98%, 1)",
+        btn: "hsla(15, 67%, 98%, 1)",
+        body: "hsla(251, 8%, 27%, 1)",
+        heading: "hsla(137, 52%, 11%, 1)",
+        body: "hsla(251, 8%, 27%, 1)",
+      },
+      fontSize: {
+        xs: [
+          "0.75rem",
+          {
+            lineHeight: "1.125rem",
+            fontWeight: 700,
+          },
+        ],
+        sm: [
+          "0.875rem",
+          {
+            lineHeight: "1.25rem",
+            fontWeight: 700,
+          },
+        ],
+        "text-base": [
+          "1rem",
+          {
+            lineHeight: "1.5rem",
+            fontWeight: 700,
+          },
+        ],
+        "text-lg": [
+          "1.125rem",
+          {
+            lineHeight: "1.75rem",
+            fontWeight: 700,
+          },
+        ],
+        "text-xl": [
+          "1.25rem",
+          {
+            lineHeight: "1.75rem",
+            fontWeight: 700,
+          },
+        ],
+        "text-2xl": [
+          "1.5rem",
+          {
+            lineHeight: "2rem",
+            fontWeight: 700,
+          },
+        ],
+        "3xl": [
+          "1.875rem",
+          {
+            lineHeight: "2.25rem",
+            fontWeight: 700,
+          },
+        ],
+        "text-4xl": [
+          "2.25rem",
+          {
+            lineHeight: "2.5rem",
+            fontWeight: 700,
+          },
+        ],
+        "text-5xl": [
+          "3rem",
+          {
+            lineHeight: "0.0625rem",
+            fontWeight: 700,
+          },
+        ],
+        "6xl": [
+          "3.5rem",
+          {
+            lineHeight: "3.625rem",
+            fontWeight: 700,
+          },
+        ],
+        "text-7xl": [
+          "4.5rem",
+          {
+            lineHeight: "0.0625rem",
+            fontWeight: 700,
+          },
+        ],
+        "text-btn": [
+          "0.8125rem",
+          {
+            lineHeight: "normal",
+            letterSpacing: "0.0625rem",
+          },
+        ],
+      },
+      screens: {
+        320: "320px",
+        388: "388px",
       },
     },
   },
